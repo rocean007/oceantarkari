@@ -8,6 +8,7 @@ using Serilog;
 using Veggio.Api.Data;
 using Veggio.Api.Middleware;
 using Veggio.Api.Services;
+using EFCore.NamingConventions;
 
 // ── Serilog bootstrap ──────────────────────────────────────────────
 Log.Logger = new LoggerConfiguration()
