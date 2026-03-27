@@ -2,3 +2,5 @@ package-lock.json
 node_modules
 logs
 bin
+Migrations
+obj
