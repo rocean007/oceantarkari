@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Veggio.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e12ada87f789c4973d674e972b647d5245d376f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43d042ab62c9116f53a31192c19cbe5567c8d750")]
 [assembly: System.Reflection.AssemblyProductAttribute("Veggio.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Veggio.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hkn1fMnsG1g=",
+  "dgSpecHash": "sPdTklfl1NY=",
   "success": true,
   "projectFilePath": "/home/ocean/vscode/oceantarkari/backend/Veggio.Api.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,9 @@
     "/home/ocean/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/home/ocean/.nuget/packages/microsoft.extensions.dependencymodel/8.0.0/microsoft.extensions.dependencymodel.8.0.0.nupkg.sha512",
     "/home/ocean/.nuget/packages/microsoft.extensions.diagnostics.abstractions/8.0.0/microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
+    "/home/ocean/.nuget/packages/microsoft.extensions.diagnostics.healthchecks/8.0.0/microsoft.extensions.diagnostics.healthchecks.8.0.0.nupkg.sha512",
+    "/home/ocean/.nuget/packages/microsoft.extensions.diagnostics.healthchecks.abstractions/8.0.0/microsoft.extensions.diagnostics.healthchecks.abstractions.8.0.0.nupkg.sha512",
+    "/home/ocean/.nuget/packages/microsoft.extensions.diagnostics.healthchecks.entityframeworkcore/8.0.0/microsoft.extensions.diagnostics.healthchecks.entityframeworkcore.8.0.0.nupkg.sha512",
     "/home/ocean/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
     "/home/ocean/.nuget/packages/microsoft.extensions.hosting.abstractions/8.0.0/microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
     "/home/ocean/.nuget/packages/microsoft.extensions.identity.core/8.0.0/microsoft.extensions.identity.core.8.0.0.nupkg.sha512",
