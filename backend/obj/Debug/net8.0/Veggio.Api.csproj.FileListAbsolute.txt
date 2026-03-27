@@ -1,0 +1,8 @@
+/home/ocean/vscode/oceantarkari/backend/obj/Debug/net8.0/Veggio.Api.csproj.AssemblyReference.cache
+/home/ocean/vscode/oceantarkari/backend/obj/Debug/net8.0/rpswa.dswa.cache.json
+/home/ocean/vscode/oceantarkari/backend/obj/Debug/net8.0/Veggio.Api.GeneratedMSBuildEditorConfig.editorconfig
+/home/ocean/vscode/oceantarkari/backend/obj/Debug/net8.0/Veggio.Api.AssemblyInfoInputs.cache
+/home/ocean/vscode/oceantarkari/backend/obj/Debug/net8.0/Veggio.Api.AssemblyInfo.cs
+/home/ocean/vscode/oceantarkari/backend/obj/Debug/net8.0/Veggio.Api.csproj.CoreCompileInputs.cache
+/home/ocean/vscode/oceantarkari/backend/obj/Debug/net8.0/Veggio.Api.MvcApplicationPartsAssemblyInfo.cache
+/home/ocean/vscode/oceantarkari/backend/obj/Debug/net8.0/Veggio.Api.sourcelink.json
