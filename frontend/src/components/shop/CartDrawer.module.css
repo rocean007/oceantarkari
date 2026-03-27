@@ -1,0 +1,236 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 20, 14, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: calc(var(--z-overlay) - 1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-base) var(--ease-out);
+}
+.backdropOpen { opacity: 1; pointer-events: auto; }
+
+.drawer {
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  width: min(420px, 100vw);
+  background: var(--bg-card);
+  z-index: var(--z-overlay);
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 0 48px rgba(0,0,0,0.15);
+  transform: translateX(100%);
+  transition: transform var(--duration-slow) var(--ease-out);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.drawerOpen { transform: translateX(0); }
+
+/* Header */
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--space-6) var(--space-5);
+  border-bottom: 1px solid var(--border-light);
+  flex-shrink: 0;
+}
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+.count { font-size: var(--text-sm); color: var(--text-muted); }
+.closeBtn {
+  width: 40px; height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--text-secondary);
+  transition: background var(--duration-fast), color var(--duration-fast);
+  flex-shrink: 0;
+}
+.closeBtn:hover { background: var(--border-medium); color: var(--text-primary); }
+
+/* Items */
+.items {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-2) 0;
+  overscroll-behavior: contain;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-16) var(--space-8);
+  gap: var(--space-4);
+  text-align: center;
+}
+.emptyEmoji { font-size: 3rem; line-height: 1; }
+.empty p { font-size: var(--text-base); color: var(--text-muted); }
+.shopBtn {
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-forest);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--duration-fast);
+  min-height: 44px;
+}
+.shopBtn:hover { background: var(--color-sage); }
+
+/* Item row */
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--border-light);
+  transition: background var(--duration-fast);
+}
+.item:hover { background: var(--bg-secondary); }
+
+.itemImg {
+  width: 56px; height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.itemImg img { width: 100%; height: 100%; object-fit: cover; }
+.itemEmoji { font-size: 1.8rem; line-height: 1; }
+
+.itemInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.itemName {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.itemPrice {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.itemControls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.qtyRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+  padding: 2px;
+}
+.qtyBtn {
+  width: 28px; height: 28px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: var(--bg-card);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--text-primary);
+  transition: background var(--duration-fast);
+  min-width: 28px;
+}
+.qtyBtn:hover { background: var(--color-mint); }
+.qty {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.removeBtn {
+  width: 32px; height: 32px;
+  border-radius: var(--radius-full);
+  border: none; background: none;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--text-muted);
+  transition: color var(--duration-fast), background var(--duration-fast);
+}
+.removeBtn:hover { color: var(--color-red-soft); background: rgba(217,92,74,0.1); }
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--border-light);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  flex-shrink: 0;
+  background: var(--bg-card);
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.totalAmount { font-variant-numeric: tabular-nums; }
+.taxNote { font-size: var(--text-xs); color: var(--text-muted); margin-top: -8px; }
+
+.checkoutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 52px;
+  background: var(--color-forest);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: var(--text-base);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background var(--duration-fast), transform var(--duration-fast) var(--ease-spring);
+}
+.checkoutBtn:hover { background: var(--color-sage); }
+.checkoutBtn:active { transform: scale(0.98); }
+
+.viewCartLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-align: center;
+  transition: color var(--duration-fast);
+}
+.viewCartLink:hover { color: var(--text-primary); }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .drawer { background: var(--bg-secondary); }
+  .footer { background: var(--bg-secondary); }
+}

@@ -1,0 +1,95 @@
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100dvh;
+}
+@media (max-width: 1023px) { .layout { grid-template-columns: 1fr; } }
+
+.sidebar {
+  background: var(--color-forest);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+  overflow-y: auto;
+  padding: var(--space-6) 0;
+  z-index: var(--z-sticky);
+}
+@media (max-width: 1023px) { .sidebar { display: none; } }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 0 var(--space-5) var(--space-6);
+  border-bottom: 1px solid rgba(168,213,181,0.1);
+  margin-bottom: var(--space-4);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+.logoName {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-warm-white);
+}
+.logoTag {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-mint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.nav {
+  flex: 1;
+  padding: 0 var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-lg);
+  color: var(--color-mint);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  transition: background var(--duration-fast), color var(--duration-fast);
+  min-height: 44px;
+}
+.navLink:hover { background: rgba(168,213,181,0.1); color: var(--color-warm-white); }
+.navActive { background: rgba(168,213,181,0.15) !important; color: var(--color-warm-white) !important; font-weight: 600; }
+
+.sidebarFooter {
+  padding: var(--space-5);
+  border-top: 1px solid rgba(168,213,181,0.1);
+  margin-top: var(--space-4);
+}
+.adminInfo { display: flex; align-items: center; gap: var(--space-3); }
+.adminAvatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--color-mint);
+  color: var(--color-forest);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: var(--text-sm);
+  flex-shrink: 0;
+}
+.adminName { font-size: var(--text-sm); font-weight: 600; color: var(--color-warm-white); }
+.adminRole { font-size: var(--text-xs); color: var(--color-mint); }
+
+.main {
+  background: var(--bg-secondary);
+  min-height: 100dvh;
+  overflow-x: hidden;
+  padding: var(--space-8);
+}
+@media (max-width: 640px) { .main { padding: var(--space-4); } }
