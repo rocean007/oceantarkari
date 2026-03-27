@@ -222,7 +222,7 @@ namespace Veggio.Api.Migrations
                             Email = "admin@veggio.io",
                             IsActive = true,
                             Name = "Veggio Admin",
-                            PasswordHash = "$2a$11$hZkB7dc70xPSjx5U8n3TzuRDkMPfdWQha2z6bYdoI60J9vmsr97fm",
+                            PasswordHash = "$2a$11$y5c4jzZlIwn0emgs/UnnA.kjJ4Wj7ghH4J9W6qMM0wjYcqQlTcL36",
                             Role = "Admin",
                             UpdatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
                         });

@@ -118,7 +118,7 @@ namespace Veggio.Api.Migrations
             migrationBuilder.InsertData(
                 table: "user",
                 columns: new[] { "id", "address", "created_at", "email", "is_active", "name", "password_hash", "phone", "role", "updated_at" },
-                values: new object[] { new Guid("11111111-1111-1111-1111-111111111111"), null, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "admin@veggio.io", true, "Veggio Admin", "$2a$11$hZkB7dc70xPSjx5U8n3TzuRDkMPfdWQha2z6bYdoI60J9vmsr97fm", null, "Admin", new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc) });
+                values: new object[] { new Guid("11111111-1111-1111-1111-111111111111"), null, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "admin@veggio.io", true, "Veggio Admin", "$2a$11$y5c4jzZlIwn0emgs/UnnA.kjJ4Wj7ghH4J9W6qMM0wjYcqQlTcL36", null, "Admin", new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc) });
 
             migrationBuilder.InsertData(
                 table: "vegetable",
